@@ -1,0 +1,22 @@
+.countdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+.box{
+  border: 1px solid #000;
+  background-color: #333;
+  color: #fff;
+  width: 50px;
+  height: 80px;
+  display: flex;
+  font-size: 3em;margin: 0 5px;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 10px 20px;
+}
+.colon{
+  font-size: 3.5em;
+  margin-bottom: 15px;
+}

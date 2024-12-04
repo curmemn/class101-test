@@ -1,0 +1,182 @@
+/* Import Local Scss Files */
+@import "variables", "reset", "fonts";
+/* Responsive for Tablet */
+@media (min-width:768px) and (max-width:1024px) {
+  /* #########Common CSS########### */
+  section:not(.front-slider){padding: 35px 10px;}W
+  [class*=inner]{width: 100% !important;}
+  /* Header */
+  header{
+    .header-inner{
+      padding: 0 10px;
+      .search{width: 300px;}
+    }
+    .mega-navi{
+      .mega-navi-inner{
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+        .mega-navi-item{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  /* section : Front Slider */
+  /* section : Category Shortcut */
+  .category-shortcut{
+    .category-shortcut-inner{
+      .category-shortcut-items{
+        .category-shortcut-item{
+          height: auto;
+          padding: 10px 0;
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  /* section : Focus Class  */
+  /* section : Best Class */
+  /* section : Timer */
+  /* section : blog */
+  .blog{
+    .blog-inner{
+      .blog-content{
+        .blog-items{
+          .thum{
+            height: 160px;
+          }
+        }
+      }
+    }
+  }
+  /* section : Slogan*/
+  .slogan{
+    padding: 35px;
+  }
+  /* section : tip-tech */
+  .tip-tech{
+    .tip-tech-inner{
+      .tip-tech-content{
+        .tip-tech-wrap{
+          .tip-tech-items{
+            .tip-tech-item{
+              .thum{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* footer */
+  footer{
+    padding: 30px 20px;
+    .footer-inner{
+      .lnb-wrap{gap: 40px;}
+      .copyright-wrap{
+        flex-direction: column;
+        width: 80%;
+        text-align: left;
+      }
+    }
+  }
+  /* ######## Class Detail : class-detail.html ######## */
+  /* class-detail-image */
+  .class-detail-image{
+    .class-detail-image-inner{
+      height: 300px;
+      padding: 0 30px;
+      .heading{
+        h2{font-size: 24px;}
+        p{font-size: 16px;}
+      }
+      .cover-image{
+        img{
+          height: 250px;
+        }
+      }
+    }
+  }
+  .class-detail-full{
+    .class-detail-full-inner{
+      .class-detail-full-content{
+        flex-direction: column-reverse;
+        .class-detail-info{
+          .class-introduce{
+            * img{
+              width: 70%;
+            }
+          }
+          .class-mentor{
+            .class-detail-wrap{
+              .mentor-profile-summary{
+                .mentor-class-button{
+                  .btn-mentor-profile{
+                    padding: 3px 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .class-detail-sidebar{
+          position: static;
+          .class-detail-sidebar-wrap.group-required-info{
+            .overview{
+              .class-price{
+                justify-content: flex-end;
+                .sale{margin-right: 30px;}
+                .price-current{margin-right: 50px;}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ######## Take Course &Cart: take course.html ######## */
+@media screen and (max-width: 768px) {
+  .take-course-inner {
+    gap: 5px;
+
+    .cart-wrap {
+      .cart-items {
+        .cart-item {
+          flex-direction: column; /* 세로 배치 */
+          align-items: flex-start; /* 정렬 보정 */
+          gap: 10px;
+
+          .thum {
+            width: 100%;
+            max-height: 120px; /* 적절한 높이 설정 */
+            margin-bottom: 10px;
+
+            img {
+              object-fit: cover;
+              border-radius: 5px;
+            }
+          }
+
+          .cart-overview {
+            padding-left: 0;
+
+            .cart-overview-detail {
+              flex-direction: column;
+              gap: 10px;
+              text-align: left;
+
+              .cart-overview-price {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

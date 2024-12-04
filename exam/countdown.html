@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 { text-align: center; }
+    .days{color:red;}
+    .hours{color:blue;}
+    .minutes {color:green;}
+    .seconds{color:yellow;}
+  </style>
+</head>
+<body>
+  <h1 id="countdown">카운트다운 로드 중...</h1>
+  <script>
+    // 1. 목표 날짜가 있다
+    let targetDate = new Date("2024-10-31T15:00:00").getTime();
+
+    // 2. 카운트다운 함수
+    function countdown() {
+      let now = new Date().getTime(); // 현재 시간
+      let remainingTime = targetDate - now; // targetDate - 현재 시간 = 남은 시간
+
+      // 3. 시간, 분, 초 계산
+      let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24)); // 남은 일수
+      let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); // 남은 시간
+      let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60)); // 남은 분
+      let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000); // 남은 초
+      // 4. 화면에 남은 시간 표시
+      document.getElementById('countdown').innerHTML = 
+        `
+        <span class="days">${days}일</span> 
+        <span class="hours">${hours}시간</span>
+        <span class="minutes">${minutes}분</span> 
+        <span class="seconds">${seconds}초</span>
+        `;
+
+      // 5. 종료 조건 확인
+      if (remainingTime < 0) {
+        clearInterval(timer);
+        document.getElementById('countdown').innerText = "카운트다운이 종료되었습니다.";
+      }
+    }
+
+    // 6. 카운트다운 실행
+    let timer = setInterval(countdown, 1000);
+  </script>
+</body>
+</html>

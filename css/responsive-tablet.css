@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* Import Local Scss Files */
+/* Font Family */
+/* Setting Variables : Text Color */
+/* Setting Variables : Object Color */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Font Icon : Bootstrap Icons */
+/* Google Web Fonts */
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+/* Responsive for Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* #########Common CSS########### */
+  section:not(.front-slider) {
+    padding: 35px 10px;
+  }
+  W [class*=inner] {
+    width: 100% !important;
+  }
+  /* Header */
+  header .header-inner {
+    padding: 0 10px;
+  }
+  header .header-inner .search {
+    width: 300px;
+  }
+  header .mega-navi .mega-navi-inner {
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item {
+    font-size: 13px;
+  }
+  /* section : Front Slider */
+  /* section : Category Shortcut */
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item {
+    height: auto;
+    padding: 10px 0;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item span {
+    font-size: 14px;
+  }
+  /* section : Focus Class  */
+  /* section : Best Class */
+  /* section : Timer */
+  /* section : blog */
+  .blog .blog-inner .blog-content .blog-items .thum {
+    height: 160px;
+  }
+  /* section : Slogan*/
+  .slogan {
+    padding: 35px;
+  }
+  /* section : tip-tech */
+  .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thum {
+    display: none;
+  }
+  /* footer */
+  footer {
+    padding: 30px 20px;
+  }
+  footer .footer-inner .lnb-wrap {
+    gap: 40px;
+  }
+  footer .footer-inner .copyright-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    text-align: left;
+  }
+  /* ######## Class Detail : class-detail.html ######## */
+  /* class-detail-image */
+  .class-detail-image .class-detail-image-inner {
+    height: 300px;
+    padding: 0 30px;
+  }
+  .class-detail-image .class-detail-image-inner .heading h2 {
+    font-size: 24px;
+  }
+  .class-detail-image .class-detail-image-inner .heading p {
+    font-size: 16px;
+  }
+  .class-detail-image .class-detail-image-inner .cover-image img {
+    height: 250px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-introduce * img {
+    width: 70%;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-info .class-mentor .class-detail-wrap .mentor-profile-summary .mentor-class-button .btn-mentor-profile {
+    padding: 3px 10px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar {
+    position: static;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar .class-detail-sidebar-wrap.group-required-info .overview .class-price {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar .class-detail-sidebar-wrap.group-required-info .overview .class-price .sale {
+    margin-right: 30px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-content .class-detail-sidebar .class-detail-sidebar-wrap.group-required-info .overview .class-price .price-current {
+    margin-right: 50px;
+  }
+}
+/* ######## Take Course &Cart: take course.html ######## */
+@media screen and (max-width: 768px) {
+  .take-course-inner {
+    gap: 5px;
+  }
+  .take-course-inner .cart-wrap .cart-items .cart-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* 세로 배치 */
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; /* 정렬 보정 */
+    gap: 10px;
+  }
+  .take-course-inner .cart-wrap .cart-items .cart-item .thum {
+    width: 100%;
+    max-height: 120px; /* 적절한 높이 설정 */
+    margin-bottom: 10px;
+  }
+  .take-course-inner .cart-wrap .cart-items .cart-item .thum img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview {
+    padding-left: 0;
+  }
+  .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+  .take-course-inner .cart-wrap .cart-items .cart-item .cart-overview .cart-overview-detail .cart-overview-price {
+    text-align: left;
+  }
+}
